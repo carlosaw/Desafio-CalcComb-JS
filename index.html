@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Formulário de contato</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <script type="text/javascript" src="assets/js/script.js"></script>
+  </head>
+  <body>
+    <div id="loader-overlay" class="d-none">
+      <div class="loader"></div>
+    </div>
+    <form class="form" onsubmit="handleFormSubmit(event)">
+      <h1>Qual compensa?</h1>
+
+      <div class="inline-area">
+        <div class="input-area gasolina" >
+          <label for="gasolina" title="Valor da Gasolina">Preço Gasolina R$</label>
+          <input
+            type="number"
+            placeholder="Valor da Gasolina"
+            id="gasolina"
+            name="gasolina"
+            step="0.01"
+            autofocus
+            title="Valor da Gasolina"
+            required
+          />
+        </div>
+
+        <div class="input-area etanol">
+          <label for="etanol" title="Valor do Etanol">Preço Etanol R$</label>
+          <input
+            type="etanol"
+            placeholder="Valor do Etanol"
+            id="etanol"
+            name="etanol"
+            title="Valor do Etanol"
+            required
+          />
+        </div>
+      </div>
+     
+      <ul id="message-area">
+
+      </ul>
+      <div class="button-area">
+        <button type="submit" class="btn btn-submit" title="Enviar Formulário">
+          Calcular
+        </button>
+      </div>
+    </form>
+  </body>
+</html>
